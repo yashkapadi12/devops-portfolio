@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1117"/>
+      <stop offset="50%" stop-color="#141b24"/>
+      <stop offset="100%" stop-color="#1a2332"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <ellipse cx="900" cy="280" rx="280" ry="320" fill="url(#glow)"/>
+  <circle cx="880" cy="320" r="140" fill="#1e2a38" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.35"/>
+  <ellipse cx="880" cy="300" rx="70" ry="85" fill="#243447"/>
+  <path d="M780 520 Q880 420 980 520 L980 800 L780 800 Z" fill="#243447"/>
+  <text x="80" y="720" fill="#64748b" font-family="system-ui,sans-serif" font-size="18">Replace with your photo ’ public/photo.jpg</text>
+</svg>

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-slate-200 antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-cyan-300 via-teal-300 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .shimmer-text {
+    background-size: 200% auto;
+    animation: shimmer 4s linear infinite;
+  }
+
+  .hero-grid {
+    background-image:
+      linear-gradient(rgba(34, 211, 238, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34, 211, 238, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
